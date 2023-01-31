@@ -1,0 +1,9 @@
+train: VOC/train.txt
+val: VOC/val.txt
+test: VOC/test.txt
+
+# number of classes
+nc: 4
+
+# class names
+names: ['holothurian','echinus','scallop','starfish']
