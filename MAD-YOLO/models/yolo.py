@@ -183,7 +183,7 @@ class Model(nn.Module):
             m.anchors /= m.stride.view(-1, 1, 1)
             check_anchor_order(m)
             self.stride = m.stride
-            self._initialize_biases()  # only run once
+            #            self._initialize_biases()  # only run once
 
 
         # Init weights, biases
