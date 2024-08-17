@@ -33,7 +33,7 @@ pip install tensorflow* (下载的tensorflow的whl包)
 
 安装完成之后，可通过以下指令验证是否安装成功,指令执行后会显示当前tensorflow的版本号。
 
-python -c "import tensorflow; print(tensorflow.__version__)"
+//python -c "import tensorflow; print(tensorflow.__version__)"
 
 ## 建议阅读
 
