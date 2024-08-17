@@ -23,7 +23,7 @@ TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织�
 
 TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和[c++](https://www.tensorflow.org/api_docs/cc) api，以及不保证向后兼容的API[其他语言](https://www.tensorflow.org/api_docs)。
 
-通过订阅了解最新的发布公告和安全更新[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
+通过订阅了解最新的发布公告和安全更新[(announce@tensorflow.org)](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
 
 
 ## 安装
