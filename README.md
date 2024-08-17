@@ -17,13 +17,13 @@
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
 ## 什么是TensorFlow
-[TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools)，[库](https://www.tensorflow.org/resources/libraries-extensions),和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ml驱动的应用程序。
+[TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools)，[库](https://www.tensorflow.org/resources/libraries-extensions)和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ml驱动的应用程序。
 
 TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用以至于适用于其他各种各样的领域。
 
 TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和[c++](https://www.tensorflow.org/api_docs/cc) api，以及不保证向后兼容的API[其他语言](https://www.tensorflow.org/api_docs)。
 
-通过订阅了解最新的发布公告和安全更新(announce@tensorflow.org) (https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
+通过订阅了解最新的发布公告和安全更新[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
 
 
 ## 安装
