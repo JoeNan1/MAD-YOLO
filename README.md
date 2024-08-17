@@ -13,7 +13,7 @@ tensorflow版本：2.13.1
 
 DCU适配版tensorflow软件包版本:2.13.1+das.opt1.dtk24042
 
-DTK版本:21.04.1
+DTK版本:21.04.2
 
 ## 前置条件
 
