@@ -16,61 +16,18 @@
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
-[TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform
-for machine learning. It has a comprehensive, flexible ecosystem of
-[tools](https://www.tensorflow.org/resources/tools),
-[libraries](https://www.tensorflow.org/resources/libraries-extensions), and
-[community](https://www.tensorflow.org/community) resources that lets
-researchers push the state-of-the-art in ML and developers easily build and
-deploy ML-powered applications.
+[TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools),(库)(https://www.tensorflow.org/resources/libraries-extensions),和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ml驱动的应用程序。
 
-TensorFlow was originally developed by researchers and engineers working on the
-Google Brain team within Google's Machine Intelligence Research organization to
-conduct machine learning and deep neural networks research. The system is
-general enough to be applicable in a wide variety of other domains, as well.
+TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用，也可以适用于其他各种各样的领域。
 
-TensorFlow provides stable [Python](https://www.tensorflow.org/api_docs/python)
-and [C++](https://www.tensorflow.org/api_docs/cc) APIs, as well as
-non-guaranteed backward compatible API for
-[other languages](https://www.tensorflow.org/api_docs).
+TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和[c++](https://www.tensorflow.org/api_docs/cc) api，以及不保证向后兼容的API[其他语言](https://www.tensorflow.org/api_docs)。
 
-Keep up-to-date with release announcements and security updates by subscribing
-to
-[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).
-See all the [mailing lists](https://www.tensorflow.org/community/forums).
-
-## Tensorflow ROCm port
-
-Please follow the instructions [here](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md) to set up your ROCm stack.
-A docker container: **rocm/tensorflow:latest(https://hub.docker.com/r/rocm/tensorflow/)** is readily available to be used:
-```
-alias drun='sudo docker run \
-      -it \
-      --network=host \
-      --device=/dev/kfd \
-      --device=/dev/dri \
-      --ipc=host \
-      --shm-size 16G \
-      --group-add video \
-      --cap-add=SYS_PTRACE \
-      --security-opt seccomp=unconfined \
-      -v $HOME/dockerx:/dockerx'
-
-drun rocm/tensorflow:latest
-```
+通过订阅了解最新的发布公告和安全更新
+来(announce@tensorflow.org) (https://groups.google.com/a/tensorflow.org/forum/ !论坛/宣布)。
+查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
 
 
-We maintain `tensorflow-rocm` whl packages on PyPI [here](https://pypi.org/project/tensorflow-rocm), to install tensorflow-rocm package using pip:
-```
-# Install some ROCm dependencies
-sudo apt install rocm-libs rccl
-
-# Pip3 install the whl package from PyPI
-pip3 install --user tensorflow-rocm --upgrade
-```
-For details on Tensorflow ROCm port, please take a look at the [ROCm-specific README file](README.ROCm.md).
-
-## Install
+## 安装
 
 See the [TensorFlow install guide](https://www.tensorflow.org/install) for the
 [pip package](https://www.tensorflow.org/install/pip), to
