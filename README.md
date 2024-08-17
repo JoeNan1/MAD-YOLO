@@ -39,6 +39,8 @@ python3.10
 #### whl安装
 pip install tensorflow* (下载的tensorflow的whl包)
 
+可在[开发者社区](https://cancon.hpccube.com:65024/4/main/)找到对应版本下载。
+
 
 #### 支持芯片
 
