@@ -16,50 +16,27 @@
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
+## 什么是TensorFlow
 [TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools),(库)(https://www.tensorflow.org/resources/libraries-extensions),和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ml驱动的应用程序。
 
-TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用，也可以适用于其他各种各样的领域。
+TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用以至于适用于其他各种各样的领域。
 
 TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和[c++](https://www.tensorflow.org/api_docs/cc) api，以及不保证向后兼容的API[其他语言](https://www.tensorflow.org/api_docs)。
 
-通过订阅了解最新的发布公告和安全更新
-来(announce@tensorflow.org) (https://groups.google.com/a/tensorflow.org/forum/ !论坛/宣布)。
-查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
+通过订阅了解最新的发布公告和安全更新(announce@tensorflow.org) (https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
 
 
 ## 安装
+支持版本
+python3.7
+python3.8
+python3.10
 
-See the [TensorFlow install guide](https://www.tensorflow.org/install) for the
-[pip package](https://www.tensorflow.org/install/pip), to
-[enable GPU support](https://www.tensorflow.org/install/gpu), use a
-[Docker container](https://www.tensorflow.org/install/docker), and
-[build from source](https://www.tensorflow.org/install/source).
+##whl安装
+pip install tensorflow* (下载的tensorflow的whl包)
 
-To install the current release, which includes support for
-[CUDA-enabled GPU cards](https://www.tensorflow.org/install/gpu) *(Ubuntu and
-Windows)*:
 
-```
-$ pip install tensorflow
-```
-
-Other devices (DirectX and MacOS-metal) are supported using
-[Device plugins](https://www.tensorflow.org/install/gpu_plugins#available_devices).
-
-A smaller CPU-only package is also available:
-
-```
-$ pip install tensorflow-cpu
-```
-
-To update TensorFlow to the latest version, add `--upgrade` flag to the above
-commands.
-
-*Nightly binaries are available for testing using the
-[tf-nightly](https://pypi.python.org/pypi/tf-nightly) and
-[tf-nightly-cpu](https://pypi.python.org/pypi/tf-nightly-cpu) packages on PyPi.*
-
-#### *Try your first TensorFlow program*
+#### *尝试你的第一个Tensorflow代码*
 
 ```shell
 $ python
@@ -74,63 +51,15 @@ $ python
 b'Hello, TensorFlow!'
 ```
 
-For more examples, see the
-[TensorFlow tutorials](https://www.tensorflow.org/tutorials/).
+更多的例子，请到
+[TensorFlow tutorials](https://www.tensorflow.org/tutorials/)查看。
 
-## Contribution guidelines
+## 支持芯片
+Z100
+K100
+K100_AI
 
-**If you want to contribute to TensorFlow, be sure to review the
-[contribution guidelines](CONTRIBUTING.md). This project adheres to TensorFlow's
-[code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to
-uphold this code.**
-
-**We use [GitHub issues](https://github.com/tensorflow/tensorflow/issues) for
-tracking requests and bugs, please see
-[TensorFlow Forum](https://discuss.tensorflow.org/) for general questions and
-discussion, and please direct specific questions to
-[Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow).**
-
-The TensorFlow project strives to abide by generally accepted best practices in
-open-source software development.
-
-## Patching guidelines
-
-Follow these steps to patch a specific version of TensorFlow, for example, to
-apply fixes to bugs or security vulnerabilities:
-
-*   Clone the TensorFlow repo and switch to the corresponding branch for your
-    desired TensorFlow version, for example, branch `r2.8` for version 2.8.
-*   Apply (that is, cherry pick) the desired changes and resolve any code
-    conflicts.
-*   Run TensorFlow tests and ensure they pass.
-*   [Build](https://www.tensorflow.org/install/source) the TensorFlow pip
-    package from source.
-
-## Continuous build status
-
-You can find more community-supported platforms and configurations in the
-[TensorFlow SIG Build community builds table](https://github.com/tensorflow/build#community-supported-tensorflow-builds).
-
-### Official Builds
-
-Build Type                    | Status                                                                                                                                                                           | Artifacts
------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------
-**Linux CPU**                 | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.html)           | [PyPI](https://pypi.org/project/tf-nightly/)
-**Linux GPU**                 | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.html) | [PyPI](https://pypi.org/project/tf-nightly-gpu/)
-**Linux XLA**                 | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.html)         | TBA
-**macOS**                     | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.html)     | [PyPI](https://pypi.org/project/tf-nightly/)
-**Windows CPU**               | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.html)       | [PyPI](https://pypi.org/project/tf-nightly/)
-**Windows GPU**               | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.html)       | [PyPI](https://pypi.org/project/tf-nightly-gpu/)
-**Android**                   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.html)               | [Download](https://bintray.com/google/tensorflow/tensorflow/_latestVersion)
-**Raspberry Pi 0 and 1**      | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.html)           | [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv6l.whl)
-**Raspberry Pi 2 and 3**      | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.html)           | [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv7l.whl)
-**Libtensorflow MacOS CPU**   | Status Temporarily Unavailable                                                                                                                                                   | [Nightly Binary](https://storage.googleapis.com/libtensorflow-nightly/prod/tensorflow/release/macos/latest/macos_cpu_libtensorflow_binaries.tar.gz) [Official GCS](https://storage.googleapis.com/tensorflow/)
-**Libtensorflow Linux CPU**   | Status Temporarily Unavailable                                                                                                                                                   | [Nightly Binary](https://storage.googleapis.com/libtensorflow-nightly/prod/tensorflow/release/ubuntu_16/latest/cpu/ubuntu_cpu_libtensorflow_binaries.tar.gz) [Official GCS](https://storage.googleapis.com/tensorflow/)
-**Libtensorflow Linux GPU**   | Status Temporarily Unavailable                                                                                                                                                   | [Nightly Binary](https://storage.googleapis.com/libtensorflow-nightly/prod/tensorflow/release/ubuntu_16/latest/gpu/ubuntu_gpu_libtensorflow_binaries.tar.gz) [Official GCS](https://storage.googleapis.com/tensorflow/)
-**Libtensorflow Windows CPU** | Status Temporarily Unavailable                                                                                                                                                   | [Nightly Binary](https://storage.googleapis.com/libtensorflow-nightly/prod/tensorflow/release/windows/latest/cpu/windows_cpu_libtensorflow_binaries.tar.gz) [Official GCS](https://storage.googleapis.com/tensorflow/)
-**Libtensorflow Windows GPU** | Status Temporarily Unavailable                                                                                                                                                   | [Nightly Binary](https://storage.googleapis.com/libtensorflow-nightly/prod/tensorflow/release/windows/latest/gpu/windows_gpu_libtensorflow_binaries.tar.gz) [Official GCS](https://storage.googleapis.com/tensorflow/)
-
-## Resources
+## 资源
 
 *   [TensorFlow.org](https://www.tensorflow.org)
 *   [TensorFlow Tutorials](https://www.tensorflow.org/tutorials/)
@@ -150,7 +79,7 @@ Learn more about the
 [TensorFlow community](https://www.tensorflow.org/community) and how to
 [contribute](https://www.tensorflow.org/community/contribute).
 
-## Courses
+## 课程
 
 *   [Deep Learning with Tensorflow from Edx](https://www.edx.org/course/deep-learning-with-tensorflow)
 *   [DeepLearning.AI TensorFlow Developer Professional Certificate from Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
@@ -163,7 +92,6 @@ Learn more about the
 *   [Intro to TensorFlow for Deep Learning from Udacity](https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187)
 *   [Introduction to TensorFlow Lite from Udacity](https://www.udacity.com/course/intro-to-tensorflow-lite--ud190)
 
-## License
-
-[Apache License 2.0](LICENSE)
+## 参考资料
+更多开发资料和相关知识在[tensorflow官网]（https://tensorflow.google.cn/learn?hl=zh-cn）查看。
 
