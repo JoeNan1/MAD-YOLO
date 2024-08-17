@@ -25,16 +25,16 @@ DTK版本:21.04.1
 ## 使用命令安装tensorflow
 
 工具安装使用 pip 方式，从光源社区[DAS](https://cancon.hpccube.com:65024/4/main/)中下载此工具的安装包。注意与 tensorflow 版本匹配
-
+```
 pip install tensorflow* (下载的tensorflow的whl包)
-
+```
 
 ## 验证
 
 安装完成之后，可通过以下指令验证是否安装成功,指令执行后会显示当前tensorflow的版本号。
-
-//python -c "import tensorflow; print(tensorflow.__version__)"
-
+```
+python -c "import tensorflow; print(tensorflow.__version__)"
+```
 ## 建议阅读
 
 
