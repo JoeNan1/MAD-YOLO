@@ -27,15 +27,26 @@ TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和
 
 
 ## 安装
-##支持版本
+
+#### 支持版本
+
 python3.7
 
 python3.8
 
 python3.10
 
-##whl安装
+#### whl安装
 pip install tensorflow* (下载的tensorflow的whl包)
+
+
+#### 支持芯片
+
+Z100
+
+K100
+
+K100_AI
 
 
 #### *尝试你的第一个Tensorflow代码*
@@ -56,12 +67,7 @@ b'Hello, TensorFlow!'
 更多的例子，请到
 [TensorFlow tutorials](https://www.tensorflow.org/tutorials/)查看。
 
-## 支持芯片
-Z100
 
-K100
-
-K100_AI
 
 ## 资源
 
