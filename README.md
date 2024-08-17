@@ -27,9 +27,11 @@ TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和
 
 
 ## 安装
-支持版本
+##支持版本
 python3.7
+
 python3.8
+
 python3.10
 
 ##whl安装
@@ -56,7 +58,9 @@ b'Hello, TensorFlow!'
 
 ## 支持芯片
 Z100
+
 K100
+
 K100_AI
 
 ## 资源
@@ -93,5 +97,5 @@ Learn more about the
 *   [Introduction to TensorFlow Lite from Udacity](https://www.udacity.com/course/intro-to-tensorflow-lite--ud190)
 
 ## 参考资料
-更多开发资料和相关知识在[tensorflow官网]（https://tensorflow.google.cn/learn?hl=zh-cn）查看。
+更多开发资料和相关知识在[tensorflow官网]（https://tensorflow.google.cn/learn?hl=zh-cn）
 
