@@ -16,94 +16,51 @@
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
-## 什么是TensorFlow
-[TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools)，[库](https://www.tensorflow.org/resources/libraries-extensions)和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ml驱动的应用程序。
+## TensorFlow简介
+[TensorFlow](https://www.tensorflow.org/)是一个端到端的开源平台用于机器学习。它有一个全面、灵活的生态系统[工具](https://www.tensorflow.org/resources/tools)，[库](https://www.tensorflow.org/resources/libraries-extensions)和[社区](https://www.tensorflow.org/community)资源让研究人员推动ML的最新技术，开发人员轻松构建和部署ML驱动的应用程序。TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用以至于能够应用于其他各种各样的领域。这些应用得意于DAS软件栈对Tensorflow 常用算子及网络模型的支持，开发者针对DCU加速卡开发应用时，可以便捷地调用深度学习以及各类数据科学应用开发所需的算子，灵活地构造各类深度神经网络模型以及其他机器学习领域的算法。
 
-TensorFlow最初由研究人员和工程师开发谷歌机器智能研究组织中的谷歌大脑团队进行机器学习和深度神经网络研究。系统是足够通用以至于适用于其他各种各样的领域。
+## 版本约束
+####暂不支持的官方版本或功能
+更高版本：暂不支持tensorflow2.14、tensorflow2.15、tensorflow2.16
 
-TensorFlow提供稳定的[Python](https://www.tensorflow.org/api_docs/python)和[c++](https://www.tensorflow.org/api_docs/cc) api，以及不保证向后兼容的API[其他语言](https://www.tensorflow.org/api_docs)。
+#### TensorFlow软件版本配套关系
 
-通过订阅了解最新的发布公告和安全更新[(announce@tensorflow.org)](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce)来查看所有的[邮件列表](https://www.tensorflow.org/community/forums)。
+tensorflow版本：2.13.1
 
+DCU适配版tensorflow软件包版本:2.13.1+das.opt1.dtk24042
 
-## 安装
+DTK版本:21.04.1
 
-#### 支持版本
+## 前置条件
 
-python3.7
+使用 DAS PyTorch需要参考[《DCU新手入门教程》](https://developer.hpccube.com/gitbook/dcu_tutorial/index.html)在主机系统安装以下组件:
+- DCU 驱动程序
+- DTK
+- Docker引擎
 
-python3.8
+## 使用命令安装tensorflow
 
-python3.10
+工具安装使用 pip 方式，从光源社区[DAS](https://cancon.hpccube.com:65024/4/main/)中下载此工具的安装包。注意与 tensorflow 版本匹配
 
-#### whl安装
 pip install tensorflow* (下载的tensorflow的whl包)
 
-可在[开发者社区](https://cancon.hpccube.com:65024/4/main/)找到对应版本下载。
+
+## 验证
+
+安装完成之后，可通过以下指令验证是否安装成功,指令执行后会显示当前tensorflow的版本号。
+
+python -c "import tensorflow; print(tensorflow.__version__)"
+
+## 建议阅读
 
 
-#### 支持芯片
-
-Z100
-
-K100
-
-K100_AI
-
-
-#### *尝试你的第一个Tensorflow代码*
-
-```shell
-$ python
-```
-
-```python
->>> import tensorflow as tf
->>> tf.add(1, 2).numpy()
-3
->>> hello = tf.constant('Hello, TensorFlow!')
->>> hello.numpy()
-b'Hello, TensorFlow!'
-```
-
-更多的例子，请到
-[TensorFlow tutorials](https://www.tensorflow.org/tutorials/)查看。
+有关Tensorflow的更多信息，请参见:
+- [AI生态包](https://cancon.hpccube.com:65024/4/main/)
+- [Model Zoo](https://sourcefind.cn/#/model-zoo/list)
+- [DCU Toolkit](https://cancon.hpccube.com:65024/1/main)
+- [驱动](https://cancon.hpccube.com:65024/6/main)
+- [学习中心](https://developer.hpccube.com/study/)
+- [论坛](https://forum.hpccube.com/)
 
 
-
-## 资源
-
-*   [TensorFlow.org](https://www.tensorflow.org)
-*   [TensorFlow Tutorials](https://www.tensorflow.org/tutorials/)
-*   [TensorFlow Official Models](https://github.com/tensorflow/models/tree/master/official)
-*   [TensorFlow Examples](https://github.com/tensorflow/examples)
-*   [TensorFlow Codelabs](https://codelabs.developers.google.com/?cat=TensorFlow)
-*   [TensorFlow Blog](https://blog.tensorflow.org)
-*   [Learn ML with TensorFlow](https://www.tensorflow.org/resources/learn-ml)
-*   [TensorFlow Twitter](https://twitter.com/tensorflow)
-*   [TensorFlow YouTube](https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ)
-*   [TensorFlow model optimization roadmap](https://www.tensorflow.org/model_optimization/guide/roadmap)
-*   [TensorFlow White Papers](https://www.tensorflow.org/about/bib)
-*   [TensorBoard Visualization Toolkit](https://github.com/tensorflow/tensorboard)
-*   [TensorFlow Code Search](https://cs.opensource.google/tensorflow/tensorflow)
-
-Learn more about the
-[TensorFlow community](https://www.tensorflow.org/community) and how to
-[contribute](https://www.tensorflow.org/community/contribute).
-
-## 课程
-
-*   [Deep Learning with Tensorflow from Edx](https://www.edx.org/course/deep-learning-with-tensorflow)
-*   [DeepLearning.AI TensorFlow Developer Professional Certificate from Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
-*   [TensorFlow: Data and Deployment from Coursera](https://www.coursera.org/specializations/tensorflow-data-and-deployment)
-*   [Getting Started with TensorFlow 2 from Coursera](https://www.coursera.org/learn/getting-started-with-tensor-flow2)
-*   [TensorFlow: Advanced Techniques from Coursera](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
-*   [TensorFlow 2 for Deep Learning Specialization from Coursera](https://www.coursera.org/specializations/tensorflow2-deeplearning)
-*   [Intro to TensorFlow for A.I, M.L, and D.L from Coursera](https://www.coursera.org/learn/introduction-tensorflow)
-*   [Machine Learning with TensorFlow on GCP from Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
-*   [Intro to TensorFlow for Deep Learning from Udacity](https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187)
-*   [Introduction to TensorFlow Lite from Udacity](https://www.udacity.com/course/intro-to-tensorflow-lite--ud190)
-
-## 参考资料
-更多开发资料和相关知识在[tensorflow官网]（https://tensorflow.google.cn/learn?hl=zh-cn）
 
